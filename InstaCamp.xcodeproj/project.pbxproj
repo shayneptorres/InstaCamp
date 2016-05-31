@@ -7,17 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278B2FBC8D6B23EA9FC38CFA /* Pods_InstaCamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12598460BBB2F7B84FF79DDA /* Pods_InstaCamp.framework */; };
+		B88BB16B1CFCF364003C77C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1601CFCF364003C77C6 /* Constants.swift */; };
+		B88BB16C1CFCF364003C77C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B88BB1611CFCF364003C77C6 /* GoogleService-Info.plist */; };
+		B88BB16D1CFCF364003C77C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1621CFCF364003C77C6 /* LoginViewController.swift */; };
+		B88BB16E1CFCF364003C77C6 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1631CFCF364003C77C6 /* ManageTeamsViewController.swift */; };
+		B88BB16F1CFCF364003C77C6 /* Material View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1641CFCF364003C77C6 /* Material View.swift */; };
+		B88BB1701CFCF364003C77C6 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1651CFCF364003C77C6 /* MaterialButton.swift */; };
+		B88BB1711CFCF364003C77C6 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1661CFCF364003C77C6 /* MaterialTextField.swift */; };
+		B88BB1721CFCF364003C77C6 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1671CFCF364003C77C6 /* Team.swift */; };
+		B88BB1731CFCF364003C77C6 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1681CFCF364003C77C6 /* TeamsViewController.swift */; };
+		B88BB1741CFCF364003C77C6 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1691CFCF364003C77C6 /* TeamTableViewCell.swift */; };
+		B88BB18C1CFCF812003C77C6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B88BB1771CFCF395003C77C6 /* Roboto-Black.ttf */; };
+		B88BB18D1CFCF815003C77C6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B88BB1791CFCF395003C77C6 /* Roboto-Bold.ttf */; };
+		B88BB18E1CFCF818003C77C6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B88BB1801CFCF395003C77C6 /* Roboto-Regular.ttf */; };
+		B88BB1901CFD0921003C77C6 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB18F1CFD0921003C77C6 /* AddTeamViewController.swift */; };
 		B8CC42D71CFCF12600989618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC42D61CFCF12600989618 /* AppDelegate.swift */; };
-		B8CC42D91CFCF12600989618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC42D81CFCF12600989618 /* ViewController.swift */; };
 		B8CC42DC1CFCF12600989618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC42DA1CFCF12600989618 /* Main.storyboard */; };
 		B8CC42DE1CFCF12600989618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CC42DD1CFCF12600989618 /* Assets.xcassets */; };
 		B8CC42E11CFCF12600989618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC42DF1CFCF12600989618 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08059413C28662D3F9F27BBE /* Pods-InstaCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaCamp/Pods-InstaCamp.debug.xcconfig"; sourceTree = "<group>"; };
+		12598460BBB2F7B84FF79DDA /* Pods_InstaCamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaCamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1703A565682517630B8F1D3C /* Pods-InstaCamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaCamp/Pods-InstaCamp.release.xcconfig"; sourceTree = "<group>"; };
+		B88BB1601CFCF364003C77C6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B88BB1611CFCF364003C77C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B88BB1621CFCF364003C77C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B88BB1631CFCF364003C77C6 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageTeamsViewController.swift; sourceTree = "<group>"; };
+		B88BB1641CFCF364003C77C6 /* Material View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Material View.swift"; sourceTree = "<group>"; };
+		B88BB1651CFCF364003C77C6 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		B88BB1661CFCF364003C77C6 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		B88BB1671CFCF364003C77C6 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B88BB1681CFCF364003C77C6 /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		B88BB1691CFCF364003C77C6 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		B88BB1771CFCF395003C77C6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		B88BB1781CFCF395003C77C6 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B88BB1791CFCF395003C77C6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B88BB17A1CFCF395003C77C6 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B88BB17B1CFCF395003C77C6 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		B88BB17C1CFCF395003C77C6 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		B88BB17D1CFCF395003C77C6 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		B88BB17E1CFCF395003C77C6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B88BB17F1CFCF395003C77C6 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B88BB1801CFCF395003C77C6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		B88BB1811CFCF395003C77C6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		B88BB1821CFCF395003C77C6 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		B88BB1831CFCF395003C77C6 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		B88BB1841CFCF395003C77C6 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B88BB1851CFCF395003C77C6 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		B88BB1861CFCF395003C77C6 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		B88BB1871CFCF395003C77C6 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		B88BB1881CFCF395003C77C6 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		B88BB18F1CFD0921003C77C6 /* AddTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
 		B8CC42D31CFCF12600989618 /* InstaCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CC42D61CFCF12600989618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8CC42D81CFCF12600989618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8CC42DB1CFCF12600989618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8CC42DD1CFCF12600989618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8CC42E01CFCF12600989618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +74,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278B2FBC8D6B23EA9FC38CFA /* Pods_InstaCamp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B88BB15F1CFCF326003C77C6 /* SF */ = {
+			isa = PBXGroup;
+			children = (
+				B88BB1611CFCF364003C77C6 /* GoogleService-Info.plist */,
+				B88BB1601CFCF364003C77C6 /* Constants.swift */,
+				B8CC42DD1CFCF12600989618 /* Assets.xcassets */,
+				B8CC42DF1CFCF12600989618 /* LaunchScreen.storyboard */,
+				B8CC42D61CFCF12600989618 /* AppDelegate.swift */,
+			);
+			name = SF;
+			sourceTree = "<group>";
+		};
+		B88BB1761CFCF373003C77C6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B88BB1771CFCF395003C77C6 /* Roboto-Black.ttf */,
+				B88BB1781CFCF395003C77C6 /* Roboto-BlackItalic.ttf */,
+				B88BB1791CFCF395003C77C6 /* Roboto-Bold.ttf */,
+				B88BB17A1CFCF395003C77C6 /* Roboto-BoldItalic.ttf */,
+				B88BB17B1CFCF395003C77C6 /* Roboto-Italic.ttf */,
+				B88BB17C1CFCF395003C77C6 /* Roboto-Light.ttf */,
+				B88BB17D1CFCF395003C77C6 /* Roboto-LightItalic.ttf */,
+				B88BB17E1CFCF395003C77C6 /* Roboto-Medium.ttf */,
+				B88BB17F1CFCF395003C77C6 /* Roboto-MediumItalic.ttf */,
+				B88BB1801CFCF395003C77C6 /* Roboto-Regular.ttf */,
+				B88BB1811CFCF395003C77C6 /* Roboto-Thin.ttf */,
+				B88BB1821CFCF395003C77C6 /* Roboto-ThinItalic.ttf */,
+				B88BB1831CFCF395003C77C6 /* RobotoCondensed-Bold.ttf */,
+				B88BB1841CFCF395003C77C6 /* RobotoCondensed-BoldItalic.ttf */,
+				B88BB1851CFCF395003C77C6 /* RobotoCondensed-Italic.ttf */,
+				B88BB1861CFCF395003C77C6 /* RobotoCondensed-Light.ttf */,
+				B88BB1871CFCF395003C77C6 /* RobotoCondensed-LightItalic.ttf */,
+				B88BB1881CFCF395003C77C6 /* RobotoCondensed-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		B88BB1891CFCF3A1003C77C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B88BB1641CFCF364003C77C6 /* Material View.swift */,
+				B88BB1651CFCF364003C77C6 /* MaterialButton.swift */,
+				B88BB1661CFCF364003C77C6 /* MaterialTextField.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B88BB18A1CFCF3BD003C77C6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B88BB18F1CFD0921003C77C6 /* AddTeamViewController.swift */,
+				B88BB1621CFCF364003C77C6 /* LoginViewController.swift */,
+				B88BB1631CFCF364003C77C6 /* ManageTeamsViewController.swift */,
+				B88BB1681CFCF364003C77C6 /* TeamsViewController.swift */,
+				B88BB1691CFCF364003C77C6 /* TeamTableViewCell.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B88BB18B1CFCF3D1003C77C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B88BB1671CFCF364003C77C6 /* Team.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		B8CC42CA1CFCF12600989618 = {
 			isa = PBXGroup;
 			children = (
 				B8CC42D51CFCF12600989618 /* InstaCamp */,
 				B8CC42D41CFCF12600989618 /* Products */,
+				BCD933DA1BAE9ABCB22421A5 /* Pods */,
+				F243E1C43E5D648B68CFC64A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +169,32 @@
 		B8CC42D51CFCF12600989618 /* InstaCamp */ = {
 			isa = PBXGroup;
 			children = (
-				B8CC42D61CFCF12600989618 /* AppDelegate.swift */,
-				B8CC42D81CFCF12600989618 /* ViewController.swift */,
 				B8CC42DA1CFCF12600989618 /* Main.storyboard */,
-				B8CC42DD1CFCF12600989618 /* Assets.xcassets */,
-				B8CC42DF1CFCF12600989618 /* LaunchScreen.storyboard */,
 				B8CC42E21CFCF12600989618 /* Info.plist */,
+				B88BB18B1CFCF3D1003C77C6 /* Classes */,
+				B88BB18A1CFCF3BD003C77C6 /* View Controllers */,
+				B88BB1891CFCF3A1003C77C6 /* Views */,
+				B88BB1761CFCF373003C77C6 /* Fonts */,
+				B88BB15F1CFCF326003C77C6 /* SF */,
 			);
 			path = InstaCamp;
+			sourceTree = "<group>";
+		};
+		BCD933DA1BAE9ABCB22421A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08059413C28662D3F9F27BBE /* Pods-InstaCamp.debug.xcconfig */,
+				1703A565682517630B8F1D3C /* Pods-InstaCamp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F243E1C43E5D648B68CFC64A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12598460BBB2F7B84FF79DDA /* Pods_InstaCamp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8CC42E51CFCF12600989618 /* Build configuration list for PBXNativeTarget "InstaCamp" */;
 			buildPhases = (
+				D7F097467262326B5F7261D0 /* 📦 Check Pods Manifest.lock */,
 				B8CC42CF1CFCF12600989618 /* Sources */,
 				B8CC42D01CFCF12600989618 /* Frameworks */,
 				B8CC42D11CFCF12600989618 /* Resources */,
+				254BB835DFF90F3F1078D395 /* 📦 Embed Pods Frameworks */,
+				1A696266F85B238480829C6F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8CC42E11CFCF12600989618 /* LaunchScreen.storyboard in Resources */,
+				B88BB18E1CFCF818003C77C6 /* Roboto-Regular.ttf in Resources */,
+				B88BB16C1CFCF364003C77C6 /* GoogleService-Info.plist in Resources */,
+				B88BB18D1CFCF815003C77C6 /* Roboto-Bold.ttf in Resources */,
+				B88BB18C1CFCF812003C77C6 /* Roboto-Black.ttf in Resources */,
 				B8CC42DE1CFCF12600989618 /* Assets.xcassets in Resources */,
 				B8CC42DC1CFCF12600989618 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +270,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A696266F85B238480829C6F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaCamp/Pods-InstaCamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		254BB835DFF90F3F1078D395 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaCamp/Pods-InstaCamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F097467262326B5F7261D0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8CC42CF1CFCF12600989618 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8CC42D91CFCF12600989618 /* ViewController.swift in Sources */,
+				B88BB16E1CFCF364003C77C6 /* ManageTeamsViewController.swift in Sources */,
+				B88BB16F1CFCF364003C77C6 /* Material View.swift in Sources */,
+				B88BB1901CFD0921003C77C6 /* AddTeamViewController.swift in Sources */,
+				B88BB1701CFCF364003C77C6 /* MaterialButton.swift in Sources */,
+				B88BB16D1CFCF364003C77C6 /* LoginViewController.swift in Sources */,
+				B88BB1721CFCF364003C77C6 /* Team.swift in Sources */,
 				B8CC42D71CFCF12600989618 /* AppDelegate.swift in Sources */,
+				B88BB1741CFCF364003C77C6 /* TeamTableViewCell.swift in Sources */,
+				B88BB16B1CFCF364003C77C6 /* Constants.swift in Sources */,
+				B88BB1731CFCF364003C77C6 /* TeamsViewController.swift in Sources */,
+				B88BB1711CFCF364003C77C6 /* MaterialTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +446,7 @@
 		};
 		B8CC42E61CFCF12600989618 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08059413C28662D3F9F27BBE /* Pods-InstaCamp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaCamp/Info.plist;
@@ -260,6 +458,7 @@
 		};
 		B8CC42E71CFCF12600989618 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1703A565682517630B8F1D3C /* Pods-InstaCamp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InstaCamp/Info.plist;
@@ -288,6 +487,7 @@
 				B8CC42E71CFCF12600989618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

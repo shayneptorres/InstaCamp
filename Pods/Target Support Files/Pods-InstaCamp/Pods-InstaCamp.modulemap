@@ -1,0 +1,6 @@
+framework module Pods_InstaCamp {
+  umbrella header "Pods-InstaCamp-umbrella.h"
+
+  export *
+  module * { export * }
+}
