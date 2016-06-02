@@ -11,7 +11,6 @@
 		B88BB16B1CFCF364003C77C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1601CFCF364003C77C6 /* Constants.swift */; };
 		B88BB16C1CFCF364003C77C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B88BB1611CFCF364003C77C6 /* GoogleService-Info.plist */; };
 		B88BB16D1CFCF364003C77C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1621CFCF364003C77C6 /* LoginViewController.swift */; };
-		B88BB16E1CFCF364003C77C6 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1631CFCF364003C77C6 /* ManageTeamsViewController.swift */; };
 		B88BB16F1CFCF364003C77C6 /* Material View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1641CFCF364003C77C6 /* Material View.swift */; };
 		B88BB1701CFCF364003C77C6 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1651CFCF364003C77C6 /* MaterialButton.swift */; };
 		B88BB1711CFCF364003C77C6 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88BB1661CFCF364003C77C6 /* MaterialTextField.swift */; };
@@ -26,6 +25,10 @@
 		B8CC42DC1CFCF12600989618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC42DA1CFCF12600989618 /* Main.storyboard */; };
 		B8CC42DE1CFCF12600989618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CC42DD1CFCF12600989618 /* Assets.xcassets */; };
 		B8CC42E11CFCF12600989618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC42DF1CFCF12600989618 /* LaunchScreen.storyboard */; };
+		B8E1D4601CFF4206005413B5 /* MaterialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1D45F1CFF4206005413B5 /* MaterialLabel.swift */; };
+		B8E1D4621CFF6655005413B5 /* RankedTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1D4611CFF6655005413B5 /* RankedTeamsViewController.swift */; };
+		B8E1D4641CFF6754005413B5 /* RankedTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1D4631CFF6754005413B5 /* RankedTeamTableViewCell.swift */; };
+		B8EBD5BA1CFFC8F500418FA4 /* EditTeamScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EBD5B91CFFC8F500418FA4 /* EditTeamScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +38,6 @@
 		B88BB1601CFCF364003C77C6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B88BB1611CFCF364003C77C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B88BB1621CFCF364003C77C6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B88BB1631CFCF364003C77C6 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		B88BB1641CFCF364003C77C6 /* Material View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Material View.swift"; sourceTree = "<group>"; };
 		B88BB1651CFCF364003C77C6 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		B88BB1661CFCF364003C77C6 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
@@ -67,6 +69,10 @@
 		B8CC42DD1CFCF12600989618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8CC42E01CFCF12600989618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8CC42E21CFCF12600989618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E1D45F1CFF4206005413B5 /* MaterialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLabel.swift; sourceTree = "<group>"; };
+		B8E1D4611CFF6655005413B5 /* RankedTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedTeamsViewController.swift; sourceTree = "<group>"; };
+		B8E1D4631CFF6754005413B5 /* RankedTeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedTeamTableViewCell.swift; sourceTree = "<group>"; };
+		B8EBD5B91CFFC8F500418FA4 /* EditTeamScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTeamScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 				B88BB1641CFCF364003C77C6 /* Material View.swift */,
 				B88BB1651CFCF364003C77C6 /* MaterialButton.swift */,
 				B88BB1661CFCF364003C77C6 /* MaterialTextField.swift */,
+				B8E1D45F1CFF4206005413B5 /* MaterialLabel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -133,9 +140,11 @@
 			children = (
 				B88BB18F1CFD0921003C77C6 /* AddTeamViewController.swift */,
 				B88BB1621CFCF364003C77C6 /* LoginViewController.swift */,
-				B88BB1631CFCF364003C77C6 /* ManageTeamsViewController.swift */,
 				B88BB1681CFCF364003C77C6 /* TeamsViewController.swift */,
 				B88BB1691CFCF364003C77C6 /* TeamTableViewCell.swift */,
+				B8E1D4611CFF6655005413B5 /* RankedTeamsViewController.swift */,
+				B8E1D4631CFF6754005413B5 /* RankedTeamTableViewCell.swift */,
+				B8EBD5B91CFFC8F500418FA4 /* EditTeamScoreViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -323,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88BB16E1CFCF364003C77C6 /* ManageTeamsViewController.swift in Sources */,
 				B88BB16F1CFCF364003C77C6 /* Material View.swift in Sources */,
+				B8E1D4621CFF6655005413B5 /* RankedTeamsViewController.swift in Sources */,
+				B8EBD5BA1CFFC8F500418FA4 /* EditTeamScoreViewController.swift in Sources */,
+				B8E1D4641CFF6754005413B5 /* RankedTeamTableViewCell.swift in Sources */,
 				B88BB1901CFD0921003C77C6 /* AddTeamViewController.swift in Sources */,
 				B88BB1701CFCF364003C77C6 /* MaterialButton.swift in Sources */,
 				B88BB16D1CFCF364003C77C6 /* LoginViewController.swift in Sources */,
@@ -332,6 +343,7 @@
 				B8CC42D71CFCF12600989618 /* AppDelegate.swift in Sources */,
 				B88BB1741CFCF364003C77C6 /* TeamTableViewCell.swift in Sources */,
 				B88BB16B1CFCF364003C77C6 /* Constants.swift in Sources */,
+				B8E1D4601CFF4206005413B5 /* MaterialLabel.swift in Sources */,
 				B88BB1731CFCF364003C77C6 /* TeamsViewController.swift in Sources */,
 				B88BB1711CFCF364003C77C6 /* MaterialTextField.swift in Sources */,
 			);
@@ -449,6 +461,7 @@
 			baseConfigurationReference = 08059413C28662D3F9F27BBE /* Pods-InstaCamp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = InstaCamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shayne-Torres.InstaCamp";
@@ -461,6 +474,7 @@
 			baseConfigurationReference = 1703A565682517630B8F1D3C /* Pods-InstaCamp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = InstaCamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shayne-Torres.InstaCamp";

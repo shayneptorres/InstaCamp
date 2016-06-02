@@ -13,6 +13,31 @@
             <string>Roboto-Black</string>
             <string>Roboto-Black</string>
             <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
+            <string>Roboto-Black</string>
         </mutableArray>
         <mutableArray key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
@@ -45,7 +70,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="y2C-2K-ezx"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gf-B7-b6o" customClass="MaterialTextField" customModule="InstaCamp" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="56" width="568" height="30"/>
@@ -55,7 +80,7 @@
                                                     <constraint firstAttribute="width" constant="568" id="uqc-CY-Vhy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Staff Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azL-6F-aqT" customClass="MaterialTextField" customModule="InstaCamp" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="103" width="568" height="30"/>
@@ -65,16 +90,16 @@
                                                     <constraint firstAttribute="width" constant="568" id="eFN-MY-5aw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already sign up? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vl-D6-2U6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already signed up? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vl-D6-2U6">
                                                 <rect key="frame" x="8" y="141" width="143" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="ZEQ-9O-qED"/>
                                                     <constraint firstAttribute="height" constant="31" id="kHR-16-nVD"/>
                                                     <constraint firstAttribute="width" constant="205" id="owb-EM-7A2"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
@@ -106,6 +131,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="v6G-CX-VH2"/>
                                                     <constraint firstAttribute="width" constant="113" id="ym3-Eo-6XI"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="18"/>
                                                 <state key="normal" title="Log In">
                                                     <color key="titleColor" red="0.94509803920000002" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -210,6 +236,7 @@
                         <outlet property="signIn_UpButton" destination="Sbr-ip-8w0" id="Lk2-aR-l0y"/>
                         <outlet property="staffPasswordTextFeild" destination="azL-6F-aqT" id="ysh-jH-eFn"/>
                         <outlet property="toggleButton" destination="pJD-du-dSW" id="jCl-5b-uxZ"/>
+                        <outlet property="userQuestionLabel" destination="8Vl-D6-2U6" id="Zdf-Go-29b"/>
                         <segue destination="jXt-fZ-a9w" kind="show" identifier="login" id="ObO-Hq-bRB"/>
                     </connections>
                 </viewController>
@@ -220,7 +247,7 @@
         <!--Item 2-->
         <scene sceneID="Mde-aq-fqh">
             <objects>
-                <viewController id="W6K-Y1-lS6" customClass="ManageTeamsViewController" customModule="InstaCamp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W6K-Y1-lS6" customClass="RankedTeamsViewController" customModule="InstaCamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ox8-g5-hOc"/>
                         <viewControllerLayoutGuide type="bottom" id="KTw-in-GoR"/>
@@ -232,43 +259,102 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTw-Cg-1G8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BPz-5Z-dtr">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BPz-5Z-dtr">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.67623396960000004" green="0.67623396960000004" blue="0.67623396960000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="Tj6-eg-tLI">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Rankings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hct-9R-Mte">
+                                                    <rect key="frame" x="185" y="20" width="229" height="39"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="229" id="Llz-TI-2r2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.12549019607843137" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="hct-9R-Mte" firstAttribute="top" secondItem="Tj6-eg-tLI" secondAttribute="top" constant="20" id="bR1-A3-7hl"/>
+                                                <constraint firstItem="hct-9R-Mte" firstAttribute="centerY" secondItem="Tj6-eg-tLI" secondAttribute="centerY" id="olZ-kH-2Eg"/>
+                                                <constraint firstItem="hct-9R-Mte" firstAttribute="centerX" secondItem="Tj6-eg-tLI" secondAttribute="centerX" id="pWp-QU-MTz"/>
+                                            </constraints>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Team" rowHeight="112" id="OEo-ew-IKl" customClass="TeamTableViewCell" customModule="InstaCamp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="108" width="600" height="112"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRanked" rowHeight="63" id="OEo-ew-IKl" customClass="RankedTeamTableViewCell" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="108" width="600" height="63"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OEo-ew-IKl" id="1Gi-Fj-lX0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="111.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="62.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-xI-Oyf">
-                                                            <rect key="frame" x="8" y="8" width="79" height="95.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-xI-Oyf" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                                            <rect key="frame" x="54" y="11" width="81" height="42"/>
+                                                            <color key="backgroundColor" red="1" green="0.0" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-r2-EYO" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="19" width="35" height="26"/>
+                                                            <color key="backgroundColor" red="0.22352941176470509" green="0.92334312080536918" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camplogo_black" translatesAutoresizingMaskIntoConstraints="NO" id="EkR-1W-U4X">
+                                                            <rect key="frame" x="495" y="6" width="97" height="52"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="97" id="K8u-di-U1v"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-fN-h7e" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                                            <rect key="frame" x="142" y="11" width="37" height="42"/>
+                                                            <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="42" id="N8s-H1-3EI"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="13"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="A2y-xI-Oyf" firstAttribute="top" secondItem="1Gi-Fj-lX0" secondAttribute="topMargin" id="AGn-Tm-bnt"/>
-                                                        <constraint firstItem="A2y-xI-Oyf" firstAttribute="bottom" secondItem="1Gi-Fj-lX0" secondAttribute="bottomMargin" id="L8y-ei-BSv"/>
-                                                        <constraint firstItem="A2y-xI-Oyf" firstAttribute="leading" secondItem="1Gi-Fj-lX0" secondAttribute="leadingMargin" id="XlG-pd-fHQ"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="hIZ-r2-EYO" secondAttribute="bottom" constant="9.5" id="AwT-lX-6KR"/>
+                                                        <constraint firstItem="A2y-xI-Oyf" firstAttribute="top" secondItem="1Gi-Fj-lX0" secondAttribute="topMargin" constant="3" id="BUy-3m-BQA"/>
+                                                        <constraint firstItem="EkR-1W-U4X" firstAttribute="top" secondItem="1Gi-Fj-lX0" secondAttribute="topMargin" constant="-2" id="JIt-of-GMO"/>
+                                                        <constraint firstItem="A2y-xI-Oyf" firstAttribute="leading" secondItem="hIZ-r2-EYO" secondAttribute="trailing" constant="11.5" id="Os7-Ya-ljh"/>
+                                                        <constraint firstItem="EkR-1W-U4X" firstAttribute="trailing" secondItem="1Gi-Fj-lX0" secondAttribute="trailingMargin" id="ctC-WB-Wol"/>
+                                                        <constraint firstItem="hmW-fN-h7e" firstAttribute="leading" secondItem="A2y-xI-Oyf" secondAttribute="trailing" constant="7" id="itT-l4-60X"/>
+                                                        <constraint firstItem="hIZ-r2-EYO" firstAttribute="leading" secondItem="1Gi-Fj-lX0" secondAttribute="leadingMargin" id="k3v-mH-46S"/>
+                                                        <constraint firstItem="hmW-fN-h7e" firstAttribute="top" secondItem="1Gi-Fj-lX0" secondAttribute="topMargin" constant="3" id="pN6-Io-mfR"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="A2y-xI-Oyf" secondAttribute="bottom" constant="1.5" id="puN-J0-x8N"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="EkR-1W-U4X" secondAttribute="bottom" constant="-3.5" id="rGX-mW-VDz"/>
+                                                        <constraint firstItem="hIZ-r2-EYO" firstAttribute="top" secondItem="1Gi-Fj-lX0" secondAttribute="topMargin" constant="11" id="rwD-Xx-2yO"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="hmW-fN-h7e" secondAttribute="bottom" constant="2" id="wuU-W6-10a"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
-                                                    <outlet property="nameLabel" destination="A2y-xI-Oyf" id="UM7-fQ-PzJ"/>
+                                                    <outlet property="flagImage" destination="EkR-1W-U4X" id="Su0-H9-lPp"/>
+                                                    <outlet property="nameLabel" destination="A2y-xI-Oyf" id="g0V-Vr-zgP"/>
+                                                    <outlet property="pointsLabel" destination="hmW-fN-h7e" id="9a5-qV-WYd"/>
+                                                    <outlet property="rankLabel" destination="hIZ-r2-EYO" id="rlV-uP-gJm"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BPz-5Z-dtr" secondAttribute="bottom" id="Bgm-U8-j8M"/>
+                                    <constraint firstItem="BPz-5Z-dtr" firstAttribute="leading" secondItem="gTw-Cg-1G8" secondAttribute="leading" id="hvJ-jT-KqT"/>
+                                    <constraint firstItem="BPz-5Z-dtr" firstAttribute="top" secondItem="gTw-Cg-1G8" secondAttribute="top" id="jnF-fn-xnm"/>
+                                    <constraint firstAttribute="trailing" secondItem="BPz-5Z-dtr" secondAttribute="trailing" id="ruk-Qq-MFi"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -280,6 +366,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="UsY-r3-zfQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="BPz-5Z-dtr" id="fGg-Mx-khc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BC2-dq-GMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,39 +386,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HvX-Vw-3qA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HvX-Vw-3qA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.67623396957948723" green="0.67623396957948723" blue="0.67623396957948723" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="Gi2-rP-4DI">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.8749919824128205" green="0.8749919824128205" blue="0.8749919824128205" alpha="1" colorSpace="calibratedRGB"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYq-Lr-vQO">
+                                            <rect key="frame" x="186" y="20" width="229" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="229" id="FXu-SL-5kj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.98431372549019602" green="0.0" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="tYq-Lr-vQO" firstAttribute="centerX" secondItem="Gi2-rP-4DI" secondAttribute="centerX" id="co1-rD-fFB"/>
+                                        <constraint firstItem="tYq-Lr-vQO" firstAttribute="top" secondItem="Gi2-rP-4DI" secondAttribute="top" constant="20" id="pSJ-Yi-MGa"/>
+                                        <constraint firstItem="tYq-Lr-vQO" firstAttribute="centerY" secondItem="Gi2-rP-4DI" secondAttribute="centerY" id="wZX-TF-fzI"/>
+                                    </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="n77-Gz-XNk" customClass="TeamTableViewCell" customModule="InstaCamp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="104" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="141" id="n77-Gz-XNk" customClass="TeamTableViewCell" customModule="InstaCamp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n77-Gz-XNk" id="do8-pN-B6K">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="140.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7K-n6-Ozr">
-                                                    <rect key="frame" x="8" y="11" width="113" height="21"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camplogo_black" translatesAutoresizingMaskIntoConstraints="NO" id="cTf-o4-plp">
+                                                    <rect key="frame" x="8" y="8" width="133" height="72"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="113" id="4aN-AW-cNn"/>
+                                                        <constraint firstAttribute="width" constant="133" id="2jL-Ys-IFO"/>
+                                                        <constraint firstAttribute="height" constant="72" id="Dgl-Pw-fK4"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc9-bC-vcC" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="88" width="125" height="45"/>
+                                                    <color key="backgroundColor" red="0.98431372549019602" green="0.0" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="125" id="DbO-Yi-Aap"/>
+                                                        <constraint firstAttribute="height" constant="45" id="ghV-6J-QC7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9r-SJ-exR" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                                    <rect key="frame" x="149" y="26" width="54.5" height="35"/>
+                                                    <color key="backgroundColor" red="1" green="0.29019607843137257" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="LNV-th-btd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Leader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq8-Md-GS9" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                                    <rect key="frame" x="149" y="93" width="100" height="35"/>
+                                                    <color key="backgroundColor" red="0.023529411764705882" green="0.89803921568627454" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="E9E-d7-cA2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="w7K-n6-Ozr" firstAttribute="centerY" secondItem="do8-pN-B6K" secondAttribute="centerY" id="oNi-Av-48J"/>
-                                                <constraint firstItem="w7K-n6-Ozr" firstAttribute="leading" secondItem="do8-pN-B6K" secondAttribute="leadingMargin" id="ooT-7S-vRq"/>
+                                                <constraint firstItem="yc9-bC-vcC" firstAttribute="bottom" secondItem="do8-pN-B6K" secondAttribute="bottomMargin" id="5Bv-T0-O6a"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mq8-Md-GS9" secondAttribute="bottom" constant="4.5" id="JLo-pv-ya7"/>
+                                                <constraint firstItem="cTf-o4-plp" firstAttribute="leading" secondItem="do8-pN-B6K" secondAttribute="leadingMargin" id="caT-GZ-cMR"/>
+                                                <constraint firstItem="mq8-Md-GS9" firstAttribute="top" secondItem="s9r-SJ-exR" secondAttribute="bottom" constant="32" id="gfU-2U-2yo"/>
+                                                <constraint firstItem="s9r-SJ-exR" firstAttribute="leading" secondItem="cTf-o4-plp" secondAttribute="trailing" constant="8" id="hxk-rz-rfh"/>
+                                                <constraint firstItem="cTf-o4-plp" firstAttribute="top" secondItem="do8-pN-B6K" secondAttribute="topMargin" id="l9J-IW-NUa"/>
+                                                <constraint firstItem="yc9-bC-vcC" firstAttribute="leading" secondItem="do8-pN-B6K" secondAttribute="leadingMargin" id="r4N-Z1-met"/>
+                                                <constraint firstItem="yc9-bC-vcC" firstAttribute="top" secondItem="cTf-o4-plp" secondAttribute="bottom" constant="8" id="sHm-3g-mSc"/>
+                                                <constraint firstItem="mq8-Md-GS9" firstAttribute="leading" secondItem="yc9-bC-vcC" secondAttribute="trailing" constant="16" id="tyA-J6-7Vt"/>
+                                                <constraint firstItem="s9r-SJ-exR" firstAttribute="top" secondItem="do8-pN-B6K" secondAttribute="topMargin" constant="18" id="y2f-r9-mmc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.28367859162895925" green="0.28367859162895925" blue="0.28367859162895925" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="teamNameLabel" destination="w7K-n6-Ozr" id="Y0S-ZX-Rar"/>
+                                            <outlet property="teamFlag" destination="cTf-o4-plp" id="tvM-Wn-hE7"/>
+                                            <outlet property="teamLeaderLabel" destination="mq8-Md-GS9" id="A61-l9-3eL"/>
+                                            <outlet property="teamNameLabel" destination="yc9-bC-vcC" id="kef-gR-uRW"/>
+                                            <outlet property="teamPointsLabel" destination="s9r-SJ-exR" id="2jf-aR-BW0"/>
+                                            <segue destination="QPw-ho-1Tz" kind="showDetail" id="ek3-wE-MV5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -352,6 +499,348 @@
             </objects>
             <point key="canvasLocation" x="1713" y="-42"/>
         </scene>
+        <!--Edit Team Score View Controller-->
+        <scene sceneID="54x-dR-B25">
+            <objects>
+                <viewController id="QPw-ho-1Tz" customClass="EditTeamScoreViewController" customModule="InstaCamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H9O-a5-nb3"/>
+                        <viewControllerLayoutGuide type="bottom" id="O6A-5l-2v5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YmB-nf-EcP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48n-NE-A0a">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-Me-Bjl" customClass="Material_View" customModule="InstaCamp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="224" width="584" height="368"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RG-ji-rmf" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="280" width="544" height="60"/>
+                                                <color key="backgroundColor" red="0.1215686275" green="0.89411764709999997" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="hQ7-GO-1KO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitScore:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="IaV-Jp-r2D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-KJ-KyJ" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="8" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="Pa4-5z-4mo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O7-dd-O4f" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="189" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="lmS-II-4qE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1C-N4-kzF" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="440" y="189" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.1529411765" green="0.8862745098" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancel:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="Q8u-JJ-dxw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fw-mH-jJK" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="440" y="98" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.1529411765" green="0.8862745098" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="41"/>
+                                                <state key="normal" title="⇤">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backSpace:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="8S8-gU-sXT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrD-KV-E21" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="91T-1a-6oC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BG-26-6s3" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="189" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="sOy-GL-bR4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ2-vl-wuF" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="98.5" width="136" height="83"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="JPN-NQ-v0q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3m-4A-Qib" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="98.5" width="136" height="83"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="5aY-El-mOO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLX-6R-HRh" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="8" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="l5l-14-u2u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzf-yc-TCc" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="189" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="zIL-fA-UOc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-xf-qrd" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="440" y="8" width="136" height="82.5"/>
+                                                <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="Kau-T8-cQC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4S-jR-zIT" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="98.5" width="136" height="83"/>
+                                                <color key="backgroundColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="appendDigit:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="gVu-f5-AaL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="5BG-26-6s3" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="06J-LN-MNa"/>
+                                            <constraint firstAttribute="trailing" secondItem="H1C-N4-kzF" secondAttribute="trailing" constant="8" id="2j2-mo-bFm"/>
+                                            <constraint firstItem="OQ2-vl-wuF" firstAttribute="top" secondItem="vVR-KJ-KyJ" secondAttribute="bottom" constant="8" id="323-tr-ITJ"/>
+                                            <constraint firstItem="HrD-KV-E21" firstAttribute="leading" secondItem="UmN-Me-Bjl" secondAttribute="leading" constant="8" id="3tf-bT-1rl"/>
+                                            <constraint firstItem="S3m-4A-Qib" firstAttribute="top" secondItem="zLX-6R-HRh" secondAttribute="bottom" constant="8" id="7kE-5t-lKN"/>
+                                            <constraint firstItem="5BG-26-6s3" firstAttribute="top" secondItem="f4S-jR-zIT" secondAttribute="bottom" constant="7.5" id="9ba-u5-z8b"/>
+                                            <constraint firstItem="vVR-KJ-KyJ" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="B1f-yJ-yYR"/>
+                                            <constraint firstItem="7fw-mH-jJK" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="BaD-eG-l4M"/>
+                                            <constraint firstItem="vVR-KJ-KyJ" firstAttribute="top" secondItem="UmN-Me-Bjl" secondAttribute="top" constant="8" id="CPk-sZ-lhT"/>
+                                            <constraint firstItem="H1C-N4-kzF" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="EGZ-4w-MWX"/>
+                                            <constraint firstItem="Kzf-yc-TCc" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="FQU-9M-xeN"/>
+                                            <constraint firstItem="fzt-xf-qrd" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="Gbp-SE-S2v"/>
+                                            <constraint firstItem="zLX-6R-HRh" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="Ggs-CE-ghi"/>
+                                            <constraint firstItem="2RG-ji-rmf" firstAttribute="top" secondItem="Kzf-yc-TCc" secondAttribute="bottom" constant="8.5" id="IBh-UR-KkK"/>
+                                            <constraint firstItem="H1C-N4-kzF" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="JU6-tu-85D"/>
+                                            <constraint firstItem="2RG-ji-rmf" firstAttribute="top" secondItem="6O7-dd-O4f" secondAttribute="bottom" constant="8.5" id="KE4-q2-jtd"/>
+                                            <constraint firstItem="6O7-dd-O4f" firstAttribute="leading" secondItem="5BG-26-6s3" secondAttribute="trailing" constant="8" id="L0l-x1-dcN"/>
+                                            <constraint firstItem="OQ2-vl-wuF" firstAttribute="leading" secondItem="f4S-jR-zIT" secondAttribute="trailing" constant="8" id="LAV-Gu-6Ah"/>
+                                            <constraint firstItem="7fw-mH-jJK" firstAttribute="top" secondItem="fzt-xf-qrd" secondAttribute="bottom" constant="8" id="Leb-Vw-5qD"/>
+                                            <constraint firstItem="6O7-dd-O4f" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="MHW-Xi-2iY"/>
+                                            <constraint firstItem="zLX-6R-HRh" firstAttribute="top" secondItem="UmN-Me-Bjl" secondAttribute="top" constant="8" id="NJQ-wU-ynl"/>
+                                            <constraint firstItem="5BG-26-6s3" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="Nzy-Ts-I6Z"/>
+                                            <constraint firstItem="OQ2-vl-wuF" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="OXQ-Xj-n5C"/>
+                                            <constraint firstItem="7fw-mH-jJK" firstAttribute="top" secondItem="fzt-xf-qrd" secondAttribute="bottom" constant="7.5" id="OiS-b3-Xhr"/>
+                                            <constraint firstItem="7fw-mH-jJK" firstAttribute="leading" secondItem="S3m-4A-Qib" secondAttribute="trailing" constant="8" id="PQO-WY-ftq"/>
+                                            <constraint firstItem="vVR-KJ-KyJ" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="Q6k-h9-Jur"/>
+                                            <constraint firstItem="2RG-ji-rmf" firstAttribute="top" secondItem="5BG-26-6s3" secondAttribute="bottom" constant="8.5" id="Qtu-6I-H2Y"/>
+                                            <constraint firstItem="6O7-dd-O4f" firstAttribute="top" secondItem="OQ2-vl-wuF" secondAttribute="bottom" constant="8" id="Qwe-NN-7Ef"/>
+                                            <constraint firstAttribute="trailing" secondItem="7fw-mH-jJK" secondAttribute="trailing" constant="8" id="TPJ-w1-odh"/>
+                                            <constraint firstAttribute="bottom" secondItem="2RG-ji-rmf" secondAttribute="bottom" constant="28" id="VCx-PP-usH"/>
+                                            <constraint firstItem="Kzf-yc-TCc" firstAttribute="leading" secondItem="6O7-dd-O4f" secondAttribute="trailing" constant="8" id="Wfu-TB-fru"/>
+                                            <constraint firstAttribute="trailing" secondItem="2RG-ji-rmf" secondAttribute="trailing" constant="20" symbolic="YES" id="YEo-bh-H3h"/>
+                                            <constraint firstItem="7fw-mH-jJK" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="ZB3-bW-e9X"/>
+                                            <constraint firstAttribute="height" constant="368" id="ZeH-7a-wHS"/>
+                                            <constraint firstItem="Kzf-yc-TCc" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="ZgT-NA-6g9"/>
+                                            <constraint firstItem="Kzf-yc-TCc" firstAttribute="top" secondItem="S3m-4A-Qib" secondAttribute="bottom" constant="8" id="Zjz-eZ-r0J"/>
+                                            <constraint firstItem="H1C-N4-kzF" firstAttribute="top" secondItem="7fw-mH-jJK" secondAttribute="bottom" constant="8" id="aFB-Vv-FEa"/>
+                                            <constraint firstItem="fzt-xf-qrd" firstAttribute="leading" secondItem="zLX-6R-HRh" secondAttribute="trailing" constant="8" id="cUY-aB-wdM"/>
+                                            <constraint firstItem="f4S-jR-zIT" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="d0G-YU-yNW"/>
+                                            <constraint firstItem="fzt-xf-qrd" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="dmY-Oe-Uf6"/>
+                                            <constraint firstItem="6O7-dd-O4f" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="dqG-Hf-a3s"/>
+                                            <constraint firstItem="H1C-N4-kzF" firstAttribute="leading" secondItem="Kzf-yc-TCc" secondAttribute="trailing" constant="8" id="emn-ep-gJQ"/>
+                                            <constraint firstItem="HrD-KV-E21" firstAttribute="top" secondItem="UmN-Me-Bjl" secondAttribute="top" constant="8" id="fVb-OC-MFq"/>
+                                            <constraint firstItem="zLX-6R-HRh" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="ftz-Zy-dee"/>
+                                            <constraint firstItem="S3m-4A-Qib" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="gIU-1A-pR2"/>
+                                            <constraint firstItem="f4S-jR-zIT" firstAttribute="top" secondItem="HrD-KV-E21" secondAttribute="bottom" constant="8" id="gpp-UA-fPG"/>
+                                            <constraint firstItem="f4S-jR-zIT" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="hjY-Sh-X0T"/>
+                                            <constraint firstItem="OQ2-vl-wuF" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="iHH-6x-oQW"/>
+                                            <constraint firstItem="S3m-4A-Qib" firstAttribute="leading" secondItem="OQ2-vl-wuF" secondAttribute="trailing" constant="8" id="ioO-x9-USN"/>
+                                            <constraint firstItem="5BG-26-6s3" firstAttribute="leading" secondItem="UmN-Me-Bjl" secondAttribute="leading" constant="8" id="j82-od-l8z"/>
+                                            <constraint firstItem="fzt-xf-qrd" firstAttribute="top" secondItem="UmN-Me-Bjl" secondAttribute="top" constant="8" id="kZh-LQ-Fvr"/>
+                                            <constraint firstItem="H1C-N4-kzF" firstAttribute="width" secondItem="HrD-KV-E21" secondAttribute="width" id="mmq-iG-Uj6"/>
+                                            <constraint firstAttribute="trailing" secondItem="fzt-xf-qrd" secondAttribute="trailing" constant="8" id="nEC-c0-61T"/>
+                                            <constraint firstItem="5BG-26-6s3" firstAttribute="top" secondItem="f4S-jR-zIT" secondAttribute="bottom" constant="8" id="nRw-6G-QMq"/>
+                                            <constraint firstItem="2RG-ji-rmf" firstAttribute="top" secondItem="H1C-N4-kzF" secondAttribute="bottom" constant="8.5" id="qwj-d1-XF5"/>
+                                            <constraint firstItem="vVR-KJ-KyJ" firstAttribute="leading" secondItem="HrD-KV-E21" secondAttribute="trailing" constant="8" id="r6B-sj-pWR"/>
+                                            <constraint firstItem="6O7-dd-O4f" firstAttribute="top" secondItem="OQ2-vl-wuF" secondAttribute="bottom" constant="7.5" id="r6u-RP-xoo"/>
+                                            <constraint firstItem="f4S-jR-zIT" firstAttribute="leading" secondItem="UmN-Me-Bjl" secondAttribute="leading" constant="8" id="sbK-Dw-jyD"/>
+                                            <constraint firstItem="H1C-N4-kzF" firstAttribute="top" secondItem="7fw-mH-jJK" secondAttribute="bottom" constant="8.5" id="tis-AT-Jbr"/>
+                                            <constraint firstItem="2RG-ji-rmf" firstAttribute="leading" secondItem="UmN-Me-Bjl" secondAttribute="leading" constant="20" symbolic="YES" id="wMl-n2-AqN"/>
+                                            <constraint firstItem="Kzf-yc-TCc" firstAttribute="top" secondItem="S3m-4A-Qib" secondAttribute="bottom" constant="7.5" id="xZn-WX-ybY"/>
+                                            <constraint firstItem="zLX-6R-HRh" firstAttribute="leading" secondItem="vVR-KJ-KyJ" secondAttribute="trailing" constant="8" id="y9w-eu-hS7"/>
+                                            <constraint firstItem="S3m-4A-Qib" firstAttribute="height" secondItem="HrD-KV-E21" secondAttribute="height" id="yO9-IG-ifP"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JU6-tu-85D"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASk-uw-fgs" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                        <rect key="frame" x="474" y="159" width="118" height="57"/>
+                                        <color key="backgroundColor" red="0.98431372549019602" green="0.19215686274509805" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="7ZF-hR-mcg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="Remove Points">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleRemovePoints:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="Iti-xA-Apg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbB-hM-BfK" customClass="MaterialButton" customModule="InstaCamp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="159" width="118" height="57"/>
+                                        <color key="backgroundColor" red="0.12156862745098039" green="0.89411764705882357" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="LXS-5W-kRn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="Add Points">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleAddPoints:" destination="QPw-ho-1Tz" eventType="touchUpInside" id="gcs-tm-tc6"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVZ-AS-ebE" customClass="Material_View" customModule="InstaCamp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="584" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Team Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKN-kc-4hG">
+                                                <rect key="frame" x="178" y="15" width="229" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="5cm-8d-VuI"/>
+                                                    <constraint firstAttribute="width" constant="229" id="sd5-KC-K5z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="pKN-kc-4hG" secondAttribute="bottom" constant="16" id="LG1-jF-pBc"/>
+                                            <constraint firstAttribute="height" constant="70" id="Vjq-KS-KW6"/>
+                                            <constraint firstItem="pKN-kc-4hG" firstAttribute="centerX" secondItem="WVZ-AS-ebE" secondAttribute="centerX" id="cdt-qV-I1K"/>
+                                            <constraint firstItem="pKN-kc-4hG" firstAttribute="top" secondItem="WVZ-AS-ebE" secondAttribute="top" constant="15" id="rwY-Uw-CyM"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7e-zK-2p3" customClass="MaterialLabel" customModule="InstaCamp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="86" width="584" height="65"/>
+                                        <color key="backgroundColor" red="0.76625188536953248" green="0.76625188536953248" blue="0.76625188536953248" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="WjT-D1-4St"/>
+                                            <constraint firstAttribute="height" constant="65" id="k5Z-a6-fCv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UmN-Me-Bjl" firstAttribute="top" secondItem="qbB-hM-BfK" secondAttribute="bottom" constant="8" id="3Lf-eq-aFn"/>
+                                    <constraint firstAttribute="trailing" secondItem="p7e-zK-2p3" secondAttribute="trailing" constant="8" id="7Nm-QX-QSH"/>
+                                    <constraint firstAttribute="trailing" secondItem="ASk-uw-fgs" secondAttribute="trailing" constant="8" id="8im-bq-d8A"/>
+                                    <constraint firstItem="p7e-zK-2p3" firstAttribute="leading" secondItem="48n-NE-A0a" secondAttribute="leading" constant="8" id="Cxu-x9-AXM"/>
+                                    <constraint firstItem="ASk-uw-fgs" firstAttribute="top" secondItem="p7e-zK-2p3" secondAttribute="bottom" constant="8" id="HJb-kB-fR3"/>
+                                    <constraint firstAttribute="trailing" secondItem="p7e-zK-2p3" secondAttribute="trailing" constant="8" id="Jfj-qd-p9P"/>
+                                    <constraint firstAttribute="trailing" secondItem="UmN-Me-Bjl" secondAttribute="trailing" constant="8" id="MwA-AR-Vbl"/>
+                                    <constraint firstItem="qbB-hM-BfK" firstAttribute="leading" secondItem="48n-NE-A0a" secondAttribute="leading" constant="8" id="Sbd-G3-eGX"/>
+                                    <constraint firstItem="qbB-hM-BfK" firstAttribute="top" secondItem="p7e-zK-2p3" secondAttribute="bottom" constant="8" id="TAa-6B-Aw0"/>
+                                    <constraint firstAttribute="trailing" secondItem="WVZ-AS-ebE" secondAttribute="trailing" constant="8" id="TwV-e8-dZi"/>
+                                    <constraint firstItem="UmN-Me-Bjl" firstAttribute="top" secondItem="ASk-uw-fgs" secondAttribute="bottom" constant="8" id="jD5-ZX-Dsz"/>
+                                    <constraint firstItem="p7e-zK-2p3" firstAttribute="top" secondItem="WVZ-AS-ebE" secondAttribute="bottom" constant="8" id="o2V-tu-j5P"/>
+                                    <constraint firstItem="UmN-Me-Bjl" firstAttribute="leading" secondItem="48n-NE-A0a" secondAttribute="leading" constant="8" id="oja-de-leC"/>
+                                    <constraint firstItem="p7e-zK-2p3" firstAttribute="top" secondItem="WVZ-AS-ebE" secondAttribute="bottom" constant="8" id="q8E-ma-tCD"/>
+                                    <constraint firstItem="WVZ-AS-ebE" firstAttribute="leading" secondItem="48n-NE-A0a" secondAttribute="leading" constant="8" id="r14-25-4iy"/>
+                                    <constraint firstItem="WVZ-AS-ebE" firstAttribute="top" secondItem="48n-NE-A0a" secondAttribute="top" constant="8" id="r4a-I4-ilH"/>
+                                    <constraint firstItem="p7e-zK-2p3" firstAttribute="leading" secondItem="48n-NE-A0a" secondAttribute="leading" constant="8" id="w9h-BK-r5Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="UmN-Me-Bjl" secondAttribute="bottom" constant="8" id="yTm-WD-fm1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="48n-NE-A0a" firstAttribute="top" secondItem="YmB-nf-EcP" secondAttribute="top" id="BDq-Zm-Up5"/>
+                            <constraint firstAttribute="trailing" secondItem="48n-NE-A0a" secondAttribute="trailing" id="KJP-If-Xqu"/>
+                            <constraint firstItem="48n-NE-A0a" firstAttribute="bottom" secondItem="O6A-5l-2v5" secondAttribute="top" id="OW0-CO-c1t"/>
+                            <constraint firstItem="48n-NE-A0a" firstAttribute="leading" secondItem="YmB-nf-EcP" secondAttribute="leading" id="ZZ1-F0-zxl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddPointsButton" destination="qbB-hM-BfK" id="kMK-wF-bm9"/>
+                        <outlet property="removePointsButton" destination="ASk-uw-fgs" id="paX-ED-E1W"/>
+                        <outlet property="scoreDisplay" destination="p7e-zK-2p3" id="ITj-HB-hR9"/>
+                        <segue destination="L3r-aV-GA2" kind="unwind" identifier="cancel1" unwindAction="goBackToTeamsViewController:" id="IEa-dk-Gp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAF-r9-xa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="L3r-aV-GA2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2389" y="-42"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cd3-Bf-m2j">
             <objects>
@@ -372,6 +861,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camplogo_black" width="2239" height="2240"/>
         <image name="camplogo_color" width="3073" height="3073"/>
     </resources>
 </document>

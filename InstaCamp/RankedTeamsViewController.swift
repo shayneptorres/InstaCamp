@@ -1,8 +1,8 @@
 //
-//  TeamsViewController.swift
+//  RankedTeamsViewController.swift
 //  InstaCamp
 //
-//  Created by Shayne Torres on 5/29/16.
+//  Created by Shayne Torres on 6/1/16.
 //  Copyright © 2016 Shayne Torres. All rights reserved.
 //
 
@@ -10,14 +10,14 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    // Variables
+class RankedTeamsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     let ref = FIRDatabase.database().reference()
     var teams = [Team]()
     var teamsDict = [String:AnyObject]()
-    
-    // Outlets
-    @IBOutlet weak var tableView: UITableView!
+    var rank = 1
     
     override func viewDidLoad() {
         
@@ -25,6 +25,7 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         // Call to databse
+        
         ref.child("teams").observeEventType(.Value, withBlock: {snapshot in
             self.teamsDict = snapshot.value as! [String : AnyObject]
             self.teams = []
@@ -33,12 +34,16 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.teams.append(t)
             }
             
-            self.teams = self.teams.sort(){$0.name < $1.name}
+            self.teams = self.teams.sort(){Int($0.points) > Int($1.points)}
+        
+            for i in self.teams {
+                i.rank = self.rank
+                self.rank += 1
+            }
+            self.rank = 1
             self.tableView.reloadData()
         })
     }
-    
-
     
     // Table View Functions
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -50,17 +55,13 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TeamTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellRanked", forIndexPath: indexPath) as! RankedTeamTableViewCell
         cell.team = self.teams[indexPath.row]
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     }
-    
-    // Unwind Seque
-    @IBAction func goBackToTeamsViewController(segue:UIStoryboardSegue){}
-    
     
 
 }

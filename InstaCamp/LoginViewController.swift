@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextFeild: MaterialTextField!
     @IBOutlet weak var passwordTextField: MaterialTextField!
@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var errorTypeLabel: UILabel!
     @IBOutlet weak var errorDirectionLabel: UILabel!
     @IBOutlet weak var toggleButton: UIButton!
-    
+    @IBOutlet weak var userQuestionLabel: UILabel!
     
     var def = NSUserDefaults.standardUserDefaults()
     var willSignUp = true
@@ -29,6 +29,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FIRDatabase.database().persistenceEnabled = true
+        self.emailTextFeild.delegate = self
+        self.passwordTextField.delegate = self
+        self.staffPasswordTextFeild.delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -111,10 +115,12 @@ class LoginViewController: UIViewController {
     
     func setDisplay(){
         if willSignUp == true {
+            userQuestionLabel.text = "Already signed up?"
             toggleButton.setTitle("Login", forState: UIControlState.Normal)
             signIn_UpButton.setTitle("Sign Up", forState: UIControlState.Normal)
             slideStaffPasswordRight()
         } else {
+            userQuestionLabel.text = "Not signed up yet?"
             toggleButton.setTitle("Sign Up", forState: UIControlState.Normal)
             signIn_UpButton.setTitle("Login", forState: UIControlState.Normal)
             slideStaffPasswordLeft()
@@ -175,5 +181,10 @@ class LoginViewController: UIViewController {
         signIn_UpButton.enabled = true
     }
     
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }
+
+

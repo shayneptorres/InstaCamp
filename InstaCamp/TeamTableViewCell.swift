@@ -17,17 +17,23 @@ class TeamTableViewCell: UITableViewCell {
             updateUI()
         }
     }
+    var numberFormatter = NSNumberFormatter()
 
+    @IBOutlet weak var teamFlag: UIImageView!
     @IBOutlet weak var teamNameLabel: UILabel!
+    @IBOutlet weak var teamPointsLabel: UILabel!
+    @IBOutlet weak var teamLeaderLabel: MaterialLabel!
     
     func updateUI(){
-        print("this should happen")
+        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         if let team = self.team {
-            print("This is Happening")
             print(team.name)
             print(team.points)
-            print(team.leader)
+            print(team.flagImg)
             teamNameLabel.text = team.name
+            teamLeaderLabel.text = " \(team.leader) "
+            teamPointsLabel.text = " \(numberFormatter.stringFromNumber(team.points)!)pts "
+            teamFlag.image = UIImage(named: team.flagImg)
         }
         
     }
