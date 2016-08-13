@@ -30,6 +30,7 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.teams = []
             for (k,v) in self.teamsDict {
                 let t = Team(n: k, d:v as! [String : String])
+              
                 self.teams.append(t)
             }
             
@@ -38,7 +39,20 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         })
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "editScore":
+                let indexPath:NSIndexPath = self.tableView.indexPathForSelectedRow!
+                if let etsvc = segue.destinationViewController as?
+                    EditTeamScoreViewController {
+                    etsvc.team = self.teams[indexPath.row]
+                }
+            default:
+                break
+            }
+        }
+    }
     
     // Table View Functions
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

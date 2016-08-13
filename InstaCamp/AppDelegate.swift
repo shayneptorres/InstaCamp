@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         UITabBar.appearance().translucent = false
         UITabBar.appearance().barTintColor = UIColor(netHex: 0xFF2033)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
         // Override point for customization after application launch.
         return true
     }

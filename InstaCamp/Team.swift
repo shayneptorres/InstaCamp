@@ -10,7 +10,7 @@ import Foundation
 
 class Team{
     var name: String
-    var points: NSNumber
+    var points: Int
     var flagImg: String
     var rank: Int
     var leader: String
@@ -31,7 +31,7 @@ class Team{
         leader = ""
     }
     
-    init(n: String, p: NSNumber){
+    init(n: String, p: Int){
         name = n
         points = p
         flagImg = "camplogo_black"

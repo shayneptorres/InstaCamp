@@ -22,10 +22,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var errorDirectionLabel: UILabel!
     @IBOutlet weak var toggleButton: UIButton!
     @IBOutlet weak var userQuestionLabel: UILabel!
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     
     var def = NSUserDefaults.standardUserDefaults()
     var willSignUp = true
     var errorViewsIsDown = false
+    var word = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,16 +36,26 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.emailTextFeild.delegate = self
         self.passwordTextField.delegate = self
         self.staffPasswordTextFeild.delegate = self
+        activitySpinner.hidden = true
+        let transform = CGAffineTransformMakeScale(2.0, 2.0)
+        activitySpinner.transform = transform;
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+            let ref = FIRDatabase.database().reference()
+            ref.child("secrets").child("word").observeEventType(.Value, withBlock: {snapshot in
+            self.word = snapshot.value as! String
+            print(self.word)
+        })
+        
     }
     
     
     @IBAction func signUpUser(sender: MaterialButton) {
+        self.startActivitySpinner()
         if willSignUp {
-            if staffPasswordTextFeild.text! == "dtr2929" {
+            if staffPasswordTextFeild.text! == word {
                 FIRAuth.auth()?.createUserWithEmail(emailTextFeild.text!, password: passwordTextField.text!, completion: {
                     user, error in
                     
@@ -52,29 +65,38 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         _ = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: #selector(LoginViewController.showErrorMessage), userInfo: nil, repeats: false)
                         print(String(error!.localizedDescription))
                     } else {
+                        self.def.setValue("\(self.emailTextFeild.text!)", forKey: "currentUser")
                         self.segueToTeamsPage()
                         print("New user has been logged in")
                     }
-                    
+                    self.stopActivitySpinner()
                 })
             } else {
                 errorTypeLabel.text = "Incorrect Staff Password"
                 errorDirectionLabel.text = "You must enter the correct Staff password to sign up."
                 _ = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: #selector(LoginViewController.showErrorMessage), userInfo: nil, repeats: false)
-                print("You Need the correct Staff Password")
+                self.stopActivitySpinner()
             }
         } else {
             FIRAuth.auth()?.signInWithEmail(emailTextFeild.text!, password: passwordTextField.text!, completion: {
                 user, error in
                 
                 if error != nil {
-                    self.errorTypeLabel.text = "Incorrect email/password"
-                    self.errorDirectionLabel.text = "Your email and/or password is incorrect"
+                    if (error?.code)! == 17020 {
+                        self.errorTypeLabel.text = "Connection Failure"
+                        self.errorDirectionLabel.text = "Cannot connect to the database, retry with a better connection"
+                    } else {
+                        self.errorTypeLabel.text = "Incorrect email/password"
+                        self.errorDirectionLabel.text = "Your email and/or password is incorrect"
+
+                    }
                     _ = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(LoginViewController.showErrorMessage), userInfo: nil, repeats: false)
                 } else {
+                    self.def.setValue("\(self.emailTextFeild.text!)", forKey: "currentUser")
                     self.segueToTeamsPage()
                     print("user has been logged in")
                 }
+                self.stopActivitySpinner()
             })
         }
     }
@@ -179,6 +201,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func enableButton(){
         signIn_UpButton.enabled = true
+    }
+    
+    func startActivitySpinner(){
+        activitySpinner.hidden = false
+        activitySpinner.startAnimating()
+    }
+    
+    func stopActivitySpinner(){
+        activitySpinner.stopAnimating()
+        activitySpinner.hidden = true
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
